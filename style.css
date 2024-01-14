@@ -12,8 +12,7 @@ body, html {
     background-position: center;
     background-size: cover; 
     /* background-position: center;  */
-    background-repeat: no-repeat; 
-    z-index: -1;  /*Ensure the background stays behind other content */
+    background-repeat: no-repeat;   /*Ensure the background stays behind other content */
   }
   /* Style for the moving image */
   img{
@@ -32,7 +31,7 @@ body, html {
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-size: contain;
   animation: move 15s linear infinite;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* Animation definition */
@@ -45,11 +44,13 @@ body, html {
   }
 }
 .intro {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   padding-top: 75px;
+  z-index: 10;
 }
 
 .intro-text{
@@ -70,6 +71,7 @@ body, html {
   margin-bottom: 0px;
 }
 .image-button,.image-button img {
+  position: relative;
       height:200px;
       width:200px;
       border: none;
@@ -78,6 +80,7 @@ body, html {
       margin: 0;
       background: none;
       cursor: pointer;
+      z-index: 10;
     }
 
     /* Add hover effect if desired */
