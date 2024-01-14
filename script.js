@@ -7,7 +7,7 @@ playSound("pacman_beginning.wav");
 
 function buttonClicked(prop) {
   // alert('Button Clicked!');
-  document.getElementById('loader-overlay').style.display = 'flex';
+  // document.getElementById('loader-overlay').style.display = 'flex';
 
   switch (prop) {
     case 'Projects' :
@@ -32,6 +32,6 @@ function buttonClicked(prop) {
   }
 }
 
-window.onload = function() {
-  document.getElementById('loader-overlay').style.display = 'none';
-};
+// window.onload = function() {
+//   document.getElementById('loader-overlay').style.display = 'none';
+// };
