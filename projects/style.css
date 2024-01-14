@@ -1,0 +1,66 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.background-image {/* Position the background image */
+    width: 100%;      /* Set width to full viewport width */
+    height: 100%;    
+    background-image: url('yoshiislandslowed.gif'); 
+    background-position: center;
+    background-size: cover; 
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    z-index: -1;  /*Ensure the background stays behind other content */
+    animation: slowdown 100s infinite linear; /* Adjust the duration to control the speed */
+}
+
+@keyframes slowdown {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  
+  .flex-item {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+    flex: 1 0 20%; /* Each item takes up 20% of the container's width */
+    background-color: rgba(216, 219, 222, 0.75); /* White background with 85% transparency */
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  p {
+    margin: 0;
+    margin-top: 10px; /* Add spacing between paragraphs */
+    font-size: 13px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #6e069af6; /* Set link color */
+    text-shadow: 0 0 5px #464647;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  

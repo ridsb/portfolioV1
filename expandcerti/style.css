@@ -1,0 +1,61 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    }
+    /* Adjust the path to your GIF and customize other properties as needed */
+  .background-image{
+    width: 100%;      /* Set width to full viewport width */
+    height: 100%;    
+    background-image: url('yoshis-ezgif.com-video-to-gif-converter.gif'); 
+    background-position: center;
+    background-size: cover; 
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    z-index: -1;  /*Ensure the background stays behind other content */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  
+  .flex-item {
+    flex: 1;
+    text-align: center;
+    margin: 20px;
+    flex: 1 0 10%; /* Each item takes up 20% of the container's width */
+    background-color: rgba(216, 219, 222, 0.7); /* White background with 85% transparency */
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  p {
+    margin: 0;
+    margin-top: 10px; /* Add spacing between paragraphs */
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #6e069af6; /* Set link color */
+    text-shadow: 8px 8px 8px #38383b;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  

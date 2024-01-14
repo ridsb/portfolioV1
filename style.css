@@ -1,0 +1,133 @@
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  }
+  
+  .background-image {/* Position the background image */
+    width: 100%;      /* Set width to full viewport width */
+    height: 100%;    
+    background-image: url('Frame\ 1.png'); 
+    background-position: center;
+    background-size: cover; 
+    /* background-position: center;  */
+    background-repeat: no-repeat; 
+    z-index: -1;  /*Ensure the background stays behind other content */
+  }
+  /* Style for the moving image */
+  img{
+    height:20px;
+    width:20px;
+    margin-bottom: 13px; 
+  }
+
+/* Style for the image container */
+.mov-image {
+  display: flex;
+  position:absolute;
+  flex-direction: column; /* Align images vertically *//* Position each image absolutely within the container */
+  left: 0;            /* Start from the left edge */
+  top: 0;             /* Align images vertically */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-size: contain;
+  animation: move 15s linear infinite;
+  z-index: -1;
+}
+
+/* Animation definition */
+@keyframes move {
+  0% {
+    left: -100%;      /* Start from the left edge, shifted by one image width */
+  }
+  100% {
+    left: 100%;       /* Move to the right edge, shifted by one image width */
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.intro-text{
+  background-color: gray;
+  text-align: center;
+  color: white;
+  max-width: 674px;
+  padding: 16px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.intro img{
+  height:275px;
+  width:300px;
+  /* padding-top: 75px;
+  padding-left:150px; */
+  margin-bottom: 0px;
+}
+.image-button,.image-button img {
+      height:200px;
+      width:200px;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      background: none;
+      cursor: pointer;
+    }
+
+    /* Add hover effect if desired */
+    .image-button:hover img {
+      opacity: 0.8; /* Adjust the opacity for a subtle hover effect */
+    }
+    .image-button img{
+      padding-top: 75px;
+ }
+ .image-button,.icon img{
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-left: 100px;
+ }
+
+ .image-button {
+  p {
+   color: white;
+   font-size: 16px;
+   font-weight: 500;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0px !important;
+  }
+ }
+
+ /* Loader */
+
+ #loader-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
